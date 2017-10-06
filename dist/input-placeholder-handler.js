@@ -129,9 +129,6 @@ var InputPlaceholderHandler = /** @class */ (function () {
     return InputPlaceholderHandler;
 }());
 exports.InputPlaceholderHandler = InputPlaceholderHandler;
-$(document).ready(function () {
-    new InputPlaceholderHandler().initialize();
-});
 
 
 /***/ }),

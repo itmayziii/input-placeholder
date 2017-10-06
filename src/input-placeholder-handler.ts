@@ -71,7 +71,3 @@ export class InputPlaceholderHandler {
     }
 
 }
-
-$(document).ready(() => {
-    new InputPlaceholderHandler().initialize();
-});
