@@ -1,4 +1,4 @@
-var inputPlaceholderHandler =
+var InputPlaceholderHandler =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
