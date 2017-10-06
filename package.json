@@ -4,7 +4,8 @@
   "description": "This library is meant to help get around the limitation that placeholder font size can not be larger than the input font size. Instead of using a placeholder, the library will help align/hide/show a label to act as a placeholder.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "jquery": "3.x",
     "ts-loader": "^2.3.7",
     "typescript": "^2.5.3",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.6.0"
   },
   "peerDependencies": {

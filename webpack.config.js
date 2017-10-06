@@ -1,7 +1,11 @@
 const path = require('path');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    entry: './src/InputPlaceholderHandler.ts',
+    entry: {
+        "input-placeholder-handler": "./src/input-placeholder-handler.ts",
+        "input-placeholder-handler.min": "./src/input-placeholder-handler.ts"
+    },
     module: {
         rules: [
             {
@@ -15,7 +19,19 @@ module.exports = {
         extensions: [ ".tsx", ".ts", ".js" ]
     },
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
-    }
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'dist'),
+        library: 'inputPlaceholderHandler'
+    },
+    externals: {
+        jquery: {
+
+        }
+    },
+    plugins: [
+        new UglifyJSPlugin({
+            minimize: true,
+            include: /\.min\.js$/
+        })
+    ]
 };
