@@ -135,7 +135,7 @@ exports.InputPlaceholderHandler = InputPlaceholderHandler;
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = undefined;
+module.exports = jQuery;
 
 /***/ })
 /******/ ]);

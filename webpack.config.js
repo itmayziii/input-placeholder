@@ -24,9 +24,7 @@ module.exports = {
         library: 'InputPlaceholderHandler'
     },
     externals: {
-        jquery: {
-            root: '$'
-        }
+        jquery: 'jQuery'
     },
     plugins: [
         new UglifyJSPlugin({
